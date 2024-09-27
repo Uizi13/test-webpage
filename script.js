@@ -13,7 +13,7 @@ function getRandomColor() {
         color += letters[l];
         opposite_color += letters[15 - l];
     }
-    return color, opposite_color;
+    return [color, opposite_color];
 }
 
 function onPageLoad() {
