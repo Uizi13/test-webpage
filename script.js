@@ -20,6 +20,8 @@ function onPageLoad() {
     const color = getRandomColor();
     heading.style.color = color[0];
     body.style.backgroundColor = color[1];
+    console.log("a")
+    console.log(color)
     setTimeout(onPageLoad, 4000);
 }
 
