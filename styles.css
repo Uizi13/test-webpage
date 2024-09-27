@@ -16,6 +16,7 @@ body {
 /* Style the heading */
 h1 {
     color: black;
-    font-size: 3em;
+    font-size: 9em;
+    font-stretch: extra-expanded;
     transition: color 2s ease; /* Smooth color transition */
 }
