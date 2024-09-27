@@ -14,7 +14,7 @@ function getRandomColor() {
 
 function onPageLoad() {
     heading.style.color = getRandomColor();
-    setTimeout(onLoad, 4000);
+    setTimeout(onPageLoad, 4000);
 }
 
 window.onload = onPageLoad;
