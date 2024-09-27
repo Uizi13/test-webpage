@@ -9,7 +9,7 @@ function getRandomColor() {
     let color = '#';
     let opposite_color = '#';
     for (let i = 0; i < 6; i++) {
-        let l = Math.floor(Math.random() * 16)
+        let l = Math.floor(Math.random() * 16);
         color += letters[l];
         opposite_color += letters[16 - l];
     }
