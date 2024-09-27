@@ -13,6 +13,7 @@ function getRandomColor() {
 }
 
 function onPageLoad() {
+    heading.innerText = "changing";
     heading.style.color = getRandomColor();
     setTimeout(onPageLoad, 4000);
 }
