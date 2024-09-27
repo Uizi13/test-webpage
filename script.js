@@ -1,21 +1,25 @@
 // script.js
 
 const heading = document.getElementById('heading');
+const body = document.getElementById('body');
 
 // Function to generate a random color
 function getRandomColor() {
     const letters = '0123456789ABCDEF';
     let color = '#';
+    let opposite_color = '#';
     for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
+        let l = Math.floor(Math.random() * 16)
+        color += letters[l];
+        opposite_color += letters[16 - l];
     }
-    return color;
+    return color, opposite_color;
 }
 
 function onPageLoad() {
-    console.log("dataaaaaaaaaaaaaaaaaaaaa")
-    heading.innerText = "changing";
-    heading.style.color = getRandomColor();
+    let color = getRandomColor();
+    heading.style.color = color[0];
+    body.style.backgroundColor = color[1];
     setTimeout(onPageLoad, 4000);
 }
 
