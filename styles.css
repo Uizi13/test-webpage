@@ -1,0 +1,36 @@
+/* styles.css */
+
+/* Center the content */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Style the heading */
+h1 {
+    color: black;
+    font-size: 3em;
+    transition: color 0.5s ease; /* Smooth color transition */
+}
+
+/* Style the button */
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
