@@ -11,7 +11,7 @@ function getRandomColor() {
     for (let i = 0; i < 6; i++) {
         let l = Math.floor(Math.random() * 16);
         color += letters[l];
-        opposite_color += letters[16 - l];
+        opposite_color += letters[15 - l];
     }
     return color, opposite_color;
 }
