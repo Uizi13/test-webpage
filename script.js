@@ -1,7 +1,7 @@
 // script.js
 
 const heading = document.getElementById('heading');
-const body = document.getElementById('body');
+const body = document.body;
 
 // Function to generate a random color
 function getRandomColor() {
