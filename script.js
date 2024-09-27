@@ -5,7 +5,6 @@ const body = document.body;
 
 // Function to generate a random color
 function getRandomColor() {
-    console.log("a")
     const letters = '0123456789ABCDEF';
     let color = '#';
     let opposite_color = '#';
@@ -19,11 +18,9 @@ function getRandomColor() {
 
 function onPageLoad() {
     const color = getRandomColor();
-    console.log("b")
     heading.style.color = color[0];
     body.style.backgroundColor = color[1];
     setTimeout(onPageLoad, 4000);
-    console.log("c")
 }
 
 window.onload = onPageLoad;
